@@ -33,15 +33,22 @@ const config: webpack.Configuration = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js']
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './templates/index.html',
-            title: ""
+            title: ''
         })
     ],
     devServer: {
         port: 3000,
+        contentBase: path.join(__dirname, 'static'),
+        open: true,
         compress: true,
-        open: true
+        inline: true,
     }
-}
+};
+
+export default config;
