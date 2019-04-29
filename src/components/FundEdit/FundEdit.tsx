@@ -52,9 +52,7 @@ class Component extends React.Component<Props, IState> {
                             </label>
                         </div>
                     </div>
-                    <div>
-                        <input type='submit' value='Submit' />
-                    </div>
+                    <input className='submit' type='submit' value='Отправить' />
                 </form>
             </div >
         );
