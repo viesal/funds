@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import service from '../service';
+import service from '../../service';
 import { ListFundsTypes } from './types';
 
 export const actionCreator = {
